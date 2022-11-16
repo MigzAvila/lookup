@@ -15,9 +15,9 @@ if [ ! -z "$file_name" ] && [ ! -z "$last_name" ] && [[ $file_name == *".txt" ]]
         echo -e "\n "
     else 
         # Print error since the file does not exist
-        echo -e "\n$filename does not exist. \n\nPlease provide me with a file for me to find names based on the last name you provided."
+        echo -e "\n\033[0;31m$filename does not exist.\n\n\033[0;32mPlease provide me with a file for me to find names based on the last name you provided."
     fi
 else 
-    echo -e "\033[0;31m[ERROR]\n\nYou need to provide me with two arguments  for this script to work.\nUsage: my-lookup <text file name> <last name>"
+    echo -e "\033[0;31m \n\nYou need to provide me with two arguments  for this script to work.\n\033[0;32mUsage: my-lookup <text file name> <last name>"
 fi
 
