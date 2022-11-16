@@ -2,7 +2,7 @@
 
 
 function my-lookup(){
-    #User must provide three arguments to run script
+    #User must provide two arguments to run script
     local file_name="$1"
     local last_name="$2"
 
